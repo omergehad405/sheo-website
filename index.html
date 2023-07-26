@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- css link  -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="#test.html" class="logo">NIKE <img src="img/logo.png" alt=""></a>
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#product">PRODUCT</a></li>
+                    <li><a href="#fearured">FEARURED</a></li>
+                    <li><a href="#team">TEAM</a></li>
+                    <li><a href="#news">NEWS</a></li>
+                </ul>
+            </nav>
+            
+            <div class="icon">
+                    <div><span href="#"><i class="fa-sharp fa-solid fa-heart "></i></sp></div>                    
+                    <div><span href="#"><i class="fa-solid fa-user"></i></sp></div>
+                    
+                    <div class="cart">
+                        <span href="#"><i class="fa-solid fa-cart-shopping cartIcon"></i></sp>
+                        <div class="cart-list">
+                            <a class="fa-solid fa-times closeBtn"></a>
+                            <h2 class="cart-title">Your Cart</h2>
+
+                            <div class="item-box">
+                                <span class="delete-item"><i class="fa-solid fa-trash"></i></span>
+                                <img class="item-img" src="img/slide/1.png"></img>
+                                <div class="item-info">
+                                    <h4 class="item-name">NIKE SHOES</h4>
+                                    <p> price : <span class="item-price">25$</span></p>
+                                    <input type="number" class="item-quantity" value="1">
+                                </div>
+                            </div>
+
+                            <div class="btns">
+                                <button class="buy">BUY NOW</button>
+                                <button class="clear">CLEAR CART</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <i class="fa-solid fa-bars toggle"></i>
+        </div>
+
+
+    </header>
+
+    <!-- start home  -->
+    <section class="home" id="home">
+        <div class="container">
+            <div class="info">
+                <span>NIKE SPORT SHOES</span>
+                <h1>NIKE METCON SHOES</h1>
+                <p>LOREM IPSUM, DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT SUNT NAM ADIPISCI IPSA OFFICIIS AMET PARIATUR EAQUE SOLUTA SIT IURE NEQUE VOLUPTATE.</p>
+                <button><a href="#fearured">VIEW NEW PRODUCT</a></button>
+            </div>
+            <div class="image">
+                <img src="img/slide/1.png" alt="" id="homeImg">
+            </div>
+        </div>
+
+        <button class="change left"  onclick="changeImg()"><i class="fa-solid fa-arrow-left"></i></button class="change left">
+        <button class="change right" onclick="changeImg()"><i class="fa-solid fa-arrow-right"></i></button>
+    </section>
+    <!-- end home  -->
+
+    <!-- start product -->
+    <section class="product" id="product">
+        <div class="main-heading">LATEST <span>PRODUCT</span></div>
+        <div class="container">
+            <div class="box">
+                <div class="links">
+                    <span><i class="fa-sharp fa-solid fa-heart"></i></span>
+                    <span><i class="fa-solid fa-cart-shopping buyBtn"></i></span>
+                    <span><i class="fa-solid fa-eye"></i></span>
+                </div>
+                <img src="img/product4/1.jpg" alt="">
+                <div class="info">
+                    <h4 class="product-title">NIKE SHOES</h4>
+                    <p>$200 <span style="text-decoration: line-through;">$150</span></p>
+                </div>
+                <div class="rate">
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="links">
+                    <span><i class="fa-sharp fa-solid fa-heart"></i></span>
+                    <span><i class="fa-solid fa-cart-shopping buyBtn"></i></span>
+                    <span><i class="fa-solid fa-eye"></i></span>
+                </div>
+                <img src="img/product4/2.jpg" alt="">
+                <div class="info">
+                    <h4 class="product-title">NIKE SHOES</h4>
+                    <p>$200 <span style="text-decoration: line-through;">$150</span></p>
+                </div>
+                <div class="rate">
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="links">
+                    <span><i class="fa-sharp fa-solid fa-heart"></i></span>
+                    <span><i class="fa-solid fa-cart-shopping buyBtn"></i></span>
+                    <span><i class="fa-solid fa-eye"></i></span>
+                </div>
+                <img src="img/product4/3.jpg" alt="">
+                <div class="info">
+                    <h4 class="product-title">NIKE SHOES</h4>
+                    <p>$200 <span style="text-decoration: line-through;">$150</span></p>
+                </div>
+                <div class="rate">
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="links">
+                    <span><i class="fa-sharp fa-solid fa-heart"></i></span>
+                    <span><i class="fa-solid fa-cart-shopping buyBtn"></i></span>
+                    <span><i class="fa-solid fa-eye"></i></span>
+                </div>
+                <img src="img/product4/5.jpg" alt="">
+                <div class="info">
+                    <h4 class="product-title">NIKE SHOES</h4>
+                    <p>$200 <span style="text-decoration: line-through;">$150</span></p>
+                </div>
+                <div class="rate">
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="links">
+                    <span><i class="fa-sharp fa-solid fa-heart"></i></span>
+                    <span><i class="fa-solid fa-cart-shopping buyBtn"></i></span>
+                    <span><i class="fa-solid fa-eye"></i></span>
+                </div>
+                <img src="img/product4/5.jpg" alt="">
+                <div class="info">
+                    <h4 class="product-title">NIKE SHOES</h4>
+                    <p>$200 <span style="text-decoration: line-through;">$150</span></p>
+                </div>
+                <div class="rate">
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="links">
+                    <span><i class="fa-sharp fa-solid fa-heart"></i></span>
+                    <span><i class="fa-solid fa-cart-shopping buyBtn"></i></span>
+                    <span><i class="fa-solid fa-eye"></i></span>
+                </div>
+                <img src="img/product4/8.png" alt="">
+                <div class="info">
+                    <h4 class="product-title">NIKE SHOES</h4>
+                    <p>$200 <span style="text-decoration: line-through;">$150</span></p>
+                </div>
+                <div class="rate">
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end product  -->
+
+    <!-- start FEARURED  -->
+    <section class="fearured" id="fearured">
+        <div class="main-heading">NEW<span>PRODUCT</span></div>
+        <div class="container">
+            <div class="box">
+                <div class="images">
+                    <div class="subImage">
+                        <img src="img/product1/1.jpg" class="subImg-1">
+                        <img src="img/product1/2.jpg" class="subImg-1">
+                        <img src="img/product1/3.jpg" class="subImg-1">
+                        <img src="img/product1/4.jpg" class="subImg-1">
+                    </div>
+
+                    <div class="mainImg">
+                        <img src="img/product1/3.jpg" alt="" class="bigImg-1 bigImage">
+                    </div>
+                </div>
+
+                <div class="info">
+                    <h2>NEW NIKE AIRMAC SHOES</h2>
+
+                    <div class="rate">
+                        <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                        <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                        <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                        <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                        <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    </div>
+                    
+                    <p>LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT. FUGIT OFFICIIS OMNIS QUO LABORIOSAM VELIT CULPA EX ILLO, ERROR ENIM NOSTRUM?</p>
+                    <h2>$90 <span style="text-decoration: line-through;">$120$</span></h2>
+
+                    <button>ADD TO CART</button>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="images">
+                    <div class="subImage">
+                        <img src="img/product2/1.jpg" class="subImg-2">
+                        <img src="img/product2/2.jpg" class="subImg-2">
+                        <img src="img/product2/3.jpg" class="subImg-2">
+                        <img src="img/product2/4.jpg" class="subImg-2">
+                    </div>
+
+                    <div class="mainImg">
+                        <img src="img/product2/1.jpg" alt="" class="bigImg-2 bigImage">
+                    </div>
+                </div>
+
+                <div class="info">
+                    <h2>NEW NIKE AIRMAC SHOES</h2>
+
+                    <div class="rate">
+                        <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                        <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                        <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                        <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                        <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    </div>
+                    
+                    <p>LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT. FUGIT OFFICIIS OMNIS QUO LABORIOSAM VELIT CULPA EX ILLO, ERROR ENIM NOSTRUM?</p>
+                    <h2>$90 <span style="text-decoration: line-through;">$120$</span></h2>
+
+                    <button>ADD TO CART</button>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="images">
+                    <div class="subImage">
+                        <img src="img/product3/1.jpg" class="subImg-3">
+                        <img src="img/product3/2.jpg" class="subImg-3">
+                        <img src="img/product3/3.jpg" class="subImg-3">
+                        <img src="img/product3/4.jpg" class="subImg-3">
+                    </div>
+
+                    <div class="mainImg">
+                        <img src="img/product3/3.jpg" alt="" class="bigImg-3 bigImage">
+                    </div>
+                </div>
+
+                <div class="info">
+                    <h2>NEW NIKE AIRMAC SHOES</h2>
+
+                    <div class="rate">
+                        <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                        <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                        <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                        <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                        <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    </div>
+                    
+                    <p>LOREM IPSUM DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT. FUGIT OFFICIIS OMNIS QUO LABORIOSAM VELIT CULPA EX ILLO, ERROR ENIM NOSTRUM?</p>
+                    <h2>$90 <span style="text-decoration: line-through;">$120$</span></h2>
+
+                    <button>ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end FEARURED  -->
+
+    <!-- start team -->
+    <section class="team" id="team">
+        <div class="main-heading">OUT <span>TEAM</span></div>
+        <div class="container">
+            <div class="box">
+                <img src="img/team/1.png" alt="">
+                <div class="info">
+                    <h2>ZAHRA AHMADI</h2>
+                    <p>LOREM IPSUM, DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT. EOS SEQUI TEMPORIBUS IMPEDIT CORPORIS VERO AB EXERCITATIONEM DOLORE VOLUPTATIBUS, NISI NON.</p>
+                    <div class="rate">
+                        <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                        <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                        <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                        <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                        <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="img/team/2.png" alt="">
+                <div class="info">
+                    <h2>MARYAM NAZARI</h2>
+                    <p>LOREM IPSUM, DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT. EOS SEQUI TEMPORIBUS IMPEDIT CORPORIS VERO AB EXERCITATIONEM DOLORE VOLUPTATIBUS, NISI NON.</p>
+                    <div class="rate">
+                        <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                        <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                        <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                        <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                        <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="img/team/3.png" alt="">
+                <div class="info">
+                    <h2>LAYLA AKBARI</h2>
+                    <p>LOREM IPSUM, DOLOR SIT AMET CONSECTETUR ADIPISICING ELIT. EOS SEQUI TEMPORIBUS IMPEDIT CORPORIS VERO AB EXERCITATIONEM DOLORE VOLUPTATIBUS, NISI NON.</p>
+                    <div class="rate">
+                        <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                        <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                        <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                        <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                        <span><i class="fa-sharp fa-solid fa-star"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end team -->
+
+    <!-- <section class="news" id="news">
+        <div class="container">
+            <div class="content">
+                <h3>monthly news letter</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Fuga sed itaque ducimus maxime facere nihil expedita non sunt? Nostrum, voluptatem?
+                </p>
+                <form action="">
+                    <input type="email" placeholder="please enter your email" class="email">
+                    <button>SEND</button>
+                </form>
+            </div>
+        </div>
+    </section> -->
+    <!--end news-->
+    <script src="main.js"></script>
+</body>
+</html>
