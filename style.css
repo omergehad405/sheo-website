@@ -77,16 +77,21 @@ header .logo{
     justify-content: center;
     color: var(--main-color);
     height: 70px;
+    font-size: 30px;
 }
 header .logo img{
-    height: 35px;
+    height: 45px;
 }
-header ul ,
-header .icon{
+header ul,
+header .icon {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 15px;
+    cursor: pointer;
+}
+header .icon span,
+header ul li a{
     cursor: pointer;
 }
 header .links{
@@ -96,6 +101,7 @@ header .links{
 header ul a{
     color: var(--main-color);
     transition:var(--main-transition);
+    font-size: 20px;
 }
 header ul a:hover{
     color: var(--red-color);
@@ -110,31 +116,38 @@ header .toggle{
 
 header .cart-list{
     position: absolute;
-    width: 350px;
+    width: 400px;
     min-height: 150px;
     max-height:550px;
     background-color: #eee;
     top: 100%;
-    right: -350px;
+    right: -50rem;
     padding: 20px;
     overflow-y: auto;
-    transition: var(--main-transition);
+    transition: 0.3s ease-in all;
+    cursor: default;
 }
-header .cart .active{
+header .cart.active .cart-list{
     right: 0;
 }
 header .cart-list .closeBtn{
     position: absolute;
     right: 20px;
-    top: 10px;
+    top: 25px;
     font-size: 22px;
     cursor: pointer;
 }
 header .cart-title{
     text-align: center;
-    position: relative;
+    
     padding-bottom: 5px;
     border-bottom:1px solid #777;
+}
+header .cartItems{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 header .item-box{
     width: 100%;
@@ -190,7 +203,8 @@ header .btns button{
     padding: 5px 15px;
     border-radius: 25px;
     cursor: pointer;
-    transition: var(--main-transition);
+    transition: 0.5s;
+    font-weight: bold;
 }
 header .btns .buy,
 header .btns .clear:hover{
@@ -391,7 +405,7 @@ header .btns .buy:hover{
     overflow: hidden;
     transition:var(--main-transition);
 }
-.product .container .links span{
+.product .container .links i{
     background-color: var(--secondry-color);
     border-radius: 5px;
     padding: 10px;
@@ -400,7 +414,7 @@ header .btns .buy:hover{
 .product .container .box:hover .links{
     left: 10px;
 }
-.product .container .links span:hover i{
+.product .container .links i:hover{
     color: var(--red-color);
 }
 
@@ -497,7 +511,7 @@ header .btns .buy:hover{
 
 /* start team  */
 .team .container{
-    padding: 6em 0 ;
+    padding: 6em 15px ;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -506,7 +520,7 @@ header .btns .buy:hover{
 .team .container .box{
     width:350px;
     background-color: #f9f9f9;
-    margin: 0 10px;
+    margin: 5px 10px;
     border: 1px solid #ddd;
 }
 .team .container .box img{
@@ -529,52 +543,3 @@ header .btns .buy:hover{
     color: var(--red-color);
     padding: 0 0 15px;
 }
-@media (max-width:767px) {
-    .team .container {
-        justify-content: space-evenly;
-    }
-}
-
-/* start news  */
-.news{
-    padding-top: .5rem;
-    padding-bottom: .5rem;
-}
-.news .content{
-    text-align: center;
-    border: .1rem solid rgba(0, 0, 0, .1);
-    border-radius: .5rem;
-    background: #f9f9f9;
-    padding: 2rem;
-}
-.news .content h3{
-    font-size: 25px;
-}
-.news .content p{
-    font-size: 19px;
-    color: #777;
-    margin: 1rem auto;
-    max-width: 60rem;
-}
-.news .content form{
-    margin:  1rem auto;
-    max-width: 50rem;
-    display: flex;
-}
-
-.news .content form .email{
-    width: calc(100% - 25px);
-    font-size: 1rem;
-    text-transform: none;
-    color: #333;
-    padding: 0 15px 5px;
-    border: .2rem solid #000;
-    border-right: none;
-    margin-top: 1rem;
-}
-.news .content form button{
-    padding: 0 15px;
-    border: .2rem solid #000;
-    border-left: none;
-}
-/* end news  */
