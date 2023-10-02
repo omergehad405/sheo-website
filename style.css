@@ -555,13 +555,10 @@ footer .links{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5px;
+    gap: 15px;
 }
 footer .links span{
     background: var(--second-color);
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -569,7 +566,7 @@ footer .links span{
 }
 footer .links span i{
     color: white;
-    font-size: 17px;
+    font-size: 25px;
 }
 
 footer p{
