@@ -54,36 +54,65 @@ toggler.addEventListener('click' , function() {
 })
 
 //cart
-let cart = document.querySelector(".cart-list");
+let cart = document.querySelector(".cart")
+let cart_items = document.querySelector(".cartItems")
+let cartList= document.querySelector(".cart-list")
 
-let openCart = document.querySelector(".cartIcon");
+let openCart = document.querySelector(".icon .cartIcon");
 let closeCart = document.querySelector(".closeBtn");
+let clear = document.querySelector(".clear")
 
 let itemBox = document.querySelector(".item-box");
-let itemPrice = document.querySelector(".item-price");
-let itemQuantaty = document.querySelector(".item-quantity");
-let removeItem = document.querySelector(".delete-item");
-
-let totalPrice = document.querySelector(".totalAmount");
-let buyBtn = document.querySelector(".buyBtn");
-
-let productBox = document.querySelectorAll("#product .box") 
-//open cart
+let removeItem = document.querySelectorAll(".delete-item")
+let add_to_cart = Array.from(document.querySelectorAll(".addToCart"))
+let shop_img = Array.from(document.querySelectorAll(".shopImg"))
+//open & close cart
 openCart.addEventListener('click' , function() {
     cart.classList.add('active');
-});
-// close cart 
+}); 
 closeCart.addEventListener('click' , function() {
     cart.classList.toggle('active');
-})
-//remove item from cart
-removeItem.addEventListener("click", function() {
-    itemBox.remove()
-});
+}); 
 //add to cart
-
-productBox.forEach((box) => {
-    box.addEventListener('click' , (e) =>{
-        
+add_to_cart.forEach((add) =>{
+    add.addEventListener("click" , () =>{
+        // create && add item box 
+        let item_box = document.createElement("div")
+        item_box.classList.add("item-box")
+        cart_items.appendChild(item_box)
+        // remove item 
+        let delete_item = document.createElement("span")
+        delete_item.classList.add("delete-item")
+        delete_item.innerHTML = '<i class="fa-solid fa-trash"></i>'
+        item_box.appendChild(delete_item)
+        // delete item box 
+        delete_item.addEventListener("click" , ()=> {
+            delete_item.parentElement.remove()
+        })
+        // item img 
+        let item_img = document.createElement("img")
+        item_img.classList.add("item-img")
+        item_img.src = add.parentElement.parentElement.getElementsByClassName("shopImg")[0].src
+        item_box.appendChild(item_img)
+        // item info 
+        let item_info = document.createElement("div")
+        item_info.classList.add("item-info")
+        item_box.appendChild(item_info)
+        // item name 
+        let item_name = document.createElement("h4")
+        item_name.classList.add("item-name") 
+        item_name.innerHTML = add.parentElement.parentElement.getElementsByClassName("product-title")[0].innerText
+        item_info.appendChild(item_name)
+        // item price
+        let price = document.createElement("p")
+        let itemPrice = document.createElement("span")
+        itemPrice.classList.add("item-price")
+        itemPrice.innerHTML = add.parentElement.parentElement.getElementsByClassName("itemPrice")[0].innerText
+        price.innerHTML = "price : " + itemPrice.innerHTML;
+        item_info.appendChild(price)
+        // item quantity
+        let itemQuantity = document.createElement("input")
+        itemQuantity.type = "number"
+        item_info.appendChild(itemQuantity)
     })
 })
